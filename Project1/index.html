@@ -20,8 +20,7 @@
                 }
                 .main{
                     display: grid;
-                    grid-template-columns: 500px 200px 200px 200px 200px 200px;
-                    
+                    grid-template-columns: 440px 200px 200px 200px 200px 200px;    
                 }
                 .logo1{
                     margin-top: 12px;
@@ -30,104 +29,28 @@
                     width: 100px;
                     border: 0;
                 }
-/*                LINKS ARE BEING fuckING ReVISED!asxdfghjk!!!!!!*/
-/*
-                .links{
-                    width:87.5%;
-                    float:left;
+                .about, .skills, .experience, .portfolio, .contact{
+                    font-size: 25px;
+                    padding-top: 32px;
+                    text-align: center;
+                    text-decoration: none;
                 }
-                
-                .about{
-                    color: white;
+                .about2, .skills2, .experience2, .portfolio2, .contact2{
+                    color: #FF666F;
                     text-decoration: none;
-                    margin-top: 20px;
-                    margin-left: 460px;
-                    margin-bottom; 0;
-                    font-size: 25px;
-                    text-align: center;
-                    max-width: 50%;
-                    letter-spacing: .5px;
-                   }
-                .about:hover{
-                    color: #FF5500;
-                    border-bottom-style: solid;
-                    font-size: 26px;
-                    }
-                .skills{
-                    color: white;
-                    text-decoration: none;
-                    margin-top: 0px;
-                    margin-left: 65px;
-                    margin-bottom; 0;
-                    font-size: 25px;
-                    text-align: center;
-                    max-width: 50%;
-                    letter-spacing: .5px;
-                   }
-                .skills:hover{
-                    color: #FF5500;
-                    border-bottom-style: solid;
-                    font-size: 26px;
-                    }
-                .experience{
-                    color: white;
-                    text-decoration: none;
-                    margin-top: 0px;
-                    margin-left: 65px;
-                    margin-bottom; 0;
-                    font-size: 25px;
-                    text-align: center;
-                    max-width: 50%;
-                    letter-spacing: .5px;
-                   }
-                .experience:hover{
-                    color: #FF5500;
-                    border-bottom-style: solid;
-                    font-size: 26px;
-                    }
-                .portfolio{
-                    color: white;
-                    text-decoration: none;
-                    margin-top: 0px;
-                    margin-left: 65px;
-                    margin-bottom; 0;
-                    font-size: 25px;
-                    text-align: center;
-                    max-width: 50%;
-                    letter-spacing: .5px;
-                   }
-                .portfolio:hover{
-                    color: #FF5500;
-                    border-bottom-style: solid;
-                    font-size: 26px;
-                    }
-                .contact{
-                    color: white;
-                    text-decoration: none;
-                    margin-top: 0px;
-                    margin-left: 65px;
-                    margin-bottom; 0;
-                    font-size: 25px;
-                    text-align: center;
-                    max-width: 50%;
-                    letter-spacing: .5px;
-                   }
-                .contact:hover{
-                    color: #FF5500;
-                    border-bottom-style: solid;
-                    font-size: 26px;
-                    }
-                */
-                .links{
-                    display: inline;
-                    
                 }
-                h1{ 
-                    margin-bottom: 0px;
+                .about2:hover, .skills2:hover, .experience2:hover, .portfolio2:hover, .contact2:hover{
+                    color: #C22D54;
+                    font-size: 27px;
+                    border-bottom: 3px solid #C22D54;
+                }
+                body-text{
+                    display:grid;
+                    grid-template-columns: 440px;
                 }
                 .h1{
                     width: 450px;
-                    margin-top: 200px;
+                    margin-top: 150px;
                     margin-left: 238px;
                     font-size: 300%;
                     color:#75C4E8;
@@ -135,8 +58,12 @@
                     border-bottom: 10px solid #63A6C4;
                     border-bottom-left-radius: 25px;
                     border-bottom-right-radius: 25px;
+                    text-align: center;
                 }
-                p{
+                h1{
+                    margin-bottom: 0px;
+                }
+                .paragraph{
                     margin-top: 30px;
                     margin-bottom: 0px;
                     padding-bottom: 0px;
@@ -147,11 +74,6 @@
                     line-height: 29px;
                     text-align: center;
                 }
-/*
-                .items{
-                    margin-top: 200px;
-                }
-*/
                 
             </style>
     </head>
@@ -163,40 +85,45 @@
                     </a>
                 </div>
             <div class="about">
-                <a href="https://google.com">
+                <a href="https://google.com" class="about2">
                 <b>About</b>
                 </a>
             </div>  
             <div class="skills">
-                <a href="https://tumblr.com">
+                <a href="https://tumblr.com" class="skills2">
                 <b>Skills</b>
                 </a>
             </div>
             <div class="experience">  
-                <a href="https://tumblr.com">
+                <a href="https://tumblr.com" class="experience2">
                 <b>Experience</b>
                 </a>
             </div>  
             <div class="portfolio">    
-                <a href="https://www.behance.net/bwong1997">
+                <a href="https://www.behance.net/bwong1997" class="portfolio2">
                 <b>Portfolio</b>
                 </a>
             </div>
             <div class="contact">    
-                <a href="https://tumblr.com">
+                <a href="https://tumblr.com" class="contact2">
                 <b>Contact</b>
                 </a>
             </div>
             </div>
+        <div class="body-text">
             <div class="h1">
                 <h1>
                     <b>Welcome!</b> 
                 </h1>
                 </div>
+            <div class="paragraph">
                 <p>
-                <b>My resume website thingy!!!(:osd</b>
-                <br>asdiuagsduhakuhoishdoiahasdjkbasbidhihi
+                <b>An online resume
+                <br>by BoYi Wong
+                    </b>
                 </p>
+            </div>
+            </div>
             
     </body>        
 </html>
