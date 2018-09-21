@@ -20,7 +20,7 @@
                 }
                 .main{
                     display: grid;
-                    grid-template-columns: 440px 200px 200px 200px 200px 200px;    
+                    grid-template-columns: 450px 200px 200px 200px 200px 200px;    
                 }
                 .logo1{
                     margin-top: 12px;
@@ -31,26 +31,32 @@
                 }
                 .about, .skills, .experience, .portfolio, .contact{
                     font-size: 25px;
-                    padding-top: 32px;
+                    padding-top: 16px;
                     text-align: center;
                     text-decoration: none;
                 }
                 .about2, .skills2, .experience2, .portfolio2, .contact2{
                     color: #FF666F;
+                    border-top: 5px dotted #FFAD6F;
+                    border-bottom: 0px;
                     text-decoration: none;
+                    letter-spacing: .25px;
+                    text-align: center;
                 }
                 .about2:hover, .skills2:hover, .experience2:hover, .portfolio2:hover, .contact2:hover{
-                    color: #C22D54;
+                    color: #FFAD6F;
                     font-size: 27px;
-                    border-bottom: 3px solid #C22D54;
+                    border-top: 5px dotted #FF666F;
                 }
                 body-text{
                     display:grid;
-                    grid-template-columns: 440px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows:auto;
+/*FIXFIXFIX!!!!!!!!!!!!!!!*/
                 }
                 .h1{
                     width: 450px;
-                    margin-top: 150px;
+                    margin-top: 122px;
                     margin-left: 238px;
                     font-size: 300%;
                     color:#75C4E8;
@@ -73,6 +79,7 @@
                     color:#2D4B59;
                     line-height: 29px;
                     text-align: center;
+                    letter-spacing:.25px;
                 }
                 
             </style>
@@ -86,27 +93,27 @@
                 </div>
             <div class="about">
                 <a href="https://google.com" class="about2">
-                <b>About</b>
+                <b>about</b>
                 </a>
             </div>  
             <div class="skills">
                 <a href="https://tumblr.com" class="skills2">
-                <b>Skills</b>
+                <b>skills</b>
                 </a>
             </div>
             <div class="experience">  
                 <a href="https://tumblr.com" class="experience2">
-                <b>Experience</b>
+                <b>experience</b>
                 </a>
             </div>  
             <div class="portfolio">    
                 <a href="https://www.behance.net/bwong1997" class="portfolio2">
-                <b>Portfolio</b>
+                <b>portfolio</b>
                 </a>
             </div>
             <div class="contact">    
                 <a href="https://tumblr.com" class="contact2">
-                <b>Contact</b>
+                <b>contact</b>
                 </a>
             </div>
             </div>
@@ -118,8 +125,7 @@
                 </div>
             <div class="paragraph">
                 <p>
-                <b>An online resume
-                <br>by BoYi Wong
+                <b>An online resume by BoYi Wong
                     </b>
                 </p>
             </div>
