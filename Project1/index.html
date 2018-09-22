@@ -6,6 +6,9 @@
             BoYi Wong | Home
         </title>
             <style>
+                
+
+                
                 *{
                     box-sizing: border-box;
                 }
@@ -15,8 +18,7 @@
                     background-size: cover;
                     background-color: #63A6C4;
                     background-repeat: no-repeat;
-                    max-width: 100%;
-                    height:auto;
+/*                    display:flex;*/
                 }
                 .main{
                     display: grid;
@@ -50,8 +52,6 @@
                 }
                 body-text{
                     display:grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    grid-template-rows:auto;
 /*FIXFIXFIX!!!!!!!!!!!!!!!*/
                 }
                 .h1{
@@ -70,18 +70,36 @@
                     margin-bottom: 0px;
                 }
                 .paragraph{
+                    display:grid;
+                    grid-template-columns: 300px;
+                }
+                p{
                     margin-top: 30px;
                     margin-bottom: 0px;
                     padding-bottom: 0px;
-                    margin-left: 0px;
-                    margin-right: 523px;
+/*                    margin-left: 300px;*/
+                    text-align: center;
                     font-size: 115%;
                     color:#2D4B59;
                     line-height: 29px;
                     text-align: center;
                     letter-spacing:.25px;
                 }
-                
+                    @media only screen and (max-width: 500px) {
+                     body{
+                       display:flex;
+                    }
+                    .logo1{
+
+                        }
+                    .h1{
+                        max-width;30%;
+                        }
+                        .main{
+
+                        }
+                }
+
             </style>
     </head>
     <body>
