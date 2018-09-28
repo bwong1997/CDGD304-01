@@ -5,7 +5,12 @@
     BoYi Wong | Home
     </title>
     <style>
+        @font-face{
+                font-family: "BrandonGrotesque";
+                src: url(Brandon.reg.otf);
+        }
         body{
+            font-family: "Brandon Grotesque", sans-serif;
             background-image: url("Project1/images/new_index_graphic2_no_web_elements_.gif");
             background-repeat: no-repeat;
             background-position: cover;
@@ -18,24 +23,34 @@
             margin-right: auto;
             margin-top:-10px;
         }
-        .w{
-            height:720px;
-            width:400px;
-            margin-left:-10px;
-            margin-bottom:-10px;
+        .h{
+            font-family: "Brandon Grotesque", sans-serif;
+            font-size:1020px;
+            fill:#FFA897;
+            stroke:#FF7D6C;
+            stroke-width:8px;
         }
         .e{
-            height:287px;
-            width: 258px;
-            position:relative;
-            z-index: 1;
+            font-size: 650px;
+            fill: #ED7A7A;
+            stroke:#FF4739;
+            stroke-width:8px;
         }
+        
     </style>
     </head>
     <body>
             <a href="https://google.com"> <img class="wong" src="Project1/images/logos%20(wong)-01.png"> 
             </a>
-        <img class="w" src="Project1/images/indiv%20web%20letters-01.png">
-        <img class="e" src="Project1/images/indiv%20web%20letters-02.png">
+        <svg class="h" height="710" width="390">
+            <text x="-65" y="750">
+                h
+            </text>
+        </svg>
+        <svg class="e" height="600" width="500">
+            <text x="-20" y="550">
+                e
+            </text>
+        </svg>
     </body>
 </html>
