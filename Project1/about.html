@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>
-            BoYi Wong | Home
+            BoYi Wong | About 
         </title>
-        <style> 
+        <style>
             @font-face{
                 font-family: "BrandonGrotesque";
                 src: url(Brandon.reg.otf);
@@ -14,19 +14,16 @@
             }
             body{
                 font-family: "BrandGrotesque",sans-serif;
-                background-image: url("images/new_index_graphic_4.gif");   
-                background-color:white;
-                background-position: center;
-                background-repeat:no-repeat;
-                background-size: 650px 650px;
-                margin:0px;
+                margin:0;
                 margin-top: 5px;
                 overflow-x:hidden;
+                overflow-y:hidden;
+
             }
             .main{
                 display: grid;
                 grid-template-columns: 450px 200px 200px 200px 200px 200px; 
-                grid-template-rows: 125px;
+                grid-template-rows: 225px;
             }
             .logo1{
                 margin-top: 12px;
@@ -41,7 +38,7 @@
                 text-align: center;
                 text-decoration: none;
             }
-            .about2, .skills2, .experience2, .portfolio2, .contact2{
+            .skills2, .experience2, .portfolio2, .contact2{
                 color: #FF666F;
                 border-top: 5px dotted #FFAD6F;
                 border-bottom: 0px;
@@ -49,47 +46,47 @@
                 letter-spacing: .25px;
                 text-align: center;
             }
-            .about2:hover, .skills2:hover, .experience2:hover, .portfolio2:hover, .contact2:hover{
+            .about2{
+                color: #FFAD6F;
+                font-size: 25px;
+                border-top: 5px dotted #FF666F;
+                text-decoration:none;
+                letter-spacing:.25px;
+            }
+            .skills2:hover, .experience2:hover, .portfolio2:hover, .contact2:hover{
                 color: #FFAD6F;
                 font-size: 27px;
                 border-top: 5px dotted #FF666F;
             }
-            .h1{
-                display:grid;
-                grid-template-columns:1400px;
-                grid-template-rows; 600px;
-                font-size: 150%;
+            h2{
                 text-align:center;
-
-
+                font-size:25px;
+                color:#FF3145;
+            }
+            .p1{
+                position:relative;
+            }
+            p{
+                font-size:20px;
+                text-align:center;
+                margin-top:20px;
+            }
+            .h1{
+                opacity: 0.30;
             }
             h1{
+                font-size: 525px;
+                color:#FF3145;
+                margin:0;
                 text-align:center;
-                margin-top:570px;
-                margin-left:30px;
-                padding-bottom:15px;
-                color: #FFCA41;
-                line-height: 60px;
-                border-bottom: dotted 10px #FFAD6F;
-
             }
-            /*
-            audio{
-            margin-left:15px;
-            }
-            @media (max-width:500px){
-            }
-            */
-
-
-
         </style>
     </head>
     <body>
         <div class="main">
             <div class="logo">
                 <a href="index2.html">
-                    <img class="logo1" src="images/logos%20(wong)-01.png"  alt="logo" style="max-width:100% ; height:auto">
+                    <img class="logo1" src="images/logos%20(wong)-01.png" alt="logo" style="max-width:100% ; height:auto">
                 </a>
             </div>
             <div class="about">
@@ -118,14 +115,20 @@
                 </a>
             </div>
         </div>
+        <h2> 
+            boyi wong
+        </h2>
+        <p class="p1">
+            blahblahblah about me blah information blah whatever<br>
+            blahblahnamefirstandlast yeahyeah whateevere9haoiih b<br>
+            and yeahyeah blach blhal bblahb lahlhaks lihasiblahblah<br>
+        </p>
         <div class="h1">
             <h1>
-                boyi wong . designer
+                about
             </h1>
-            <!--
-<audio playin autoplay controls loop src="audio/Love%20So%20Sweet%20-%20Arashi.mp3" type="audio/mpeg">
-</audio>
--->
         </div>
+
+
     </body>
 </html>
