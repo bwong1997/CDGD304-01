@@ -4,6 +4,17 @@
         <title>
             BoYi Wong | Home
         </title>
+        <!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$(".h").click(function(){
+$(".h").fadeout("normal");
+});
+});
+</script>
+-->
         <style>
             @font-face{
                 font-family: "BrandonGrotesque";
@@ -11,22 +22,19 @@
             }
             body{
                 font-family: "Brandon Grotesque", sans-serif;
-                background-image: url("images/new_index_graphic2_no_web_elements_.gif");
-                background-repeat: no-repeat;
-                background-position: center;
-                overflow-y:hidden;
+                background-image:url("images/new_index_graphic2_no_web_elements_.gif");
+                background-repeat:no-repeat;
+                /*                background-position:center;*/
+/*                overflow-y:hidden;*/
             }
-            div{
+            .logo{
                 height:100px;
                 width:100px;
-                margin:0 auto;
+                position:fixed;
             }
             .wong{
                 height:100px;
-                width:100px;
-                display:block;
-                margin-left: auto;
-                margin-right: auto;
+                width:100px; 
                 margin-top:-10px;
             }
             .h{
@@ -34,33 +42,53 @@
                 fill:#FFA897;
                 stroke:#FF7D6C;
                 stroke-width:8px;
-                position:relative;
-
+                position:fixed;
+                left:-12px;
+                top: 100px;
             }
             .e{
                 font-size: 650px;
                 fill: #ED7A7A;
                 stroke:#FF4739;
                 stroke-width:8px;
-                position:relative;
-
+                position:fixed;
+                left: 210px;
+            }
+            .l1{
+                font-size:800px;
+                fill:#FFA669;
+                stroke:#FF6903;
+                stroke-width:8px;
+                position:absolute;
+                top:300px;
             }
         </style>
     </head>
-    <body><div>
-        <a href="https://google.com"> <img class="wong" src="images/logos%20(wong)-01.png"> 
-        </a>
+    <body>
+        <div class="logo">
+            <a href="https://google.com"> <img class="wong" src="images/logos%20(wong)-01.png"> 
+            </a>
         </div>
-        <svg class="h" height="800" width="390">
-            <text x="-65" y="750">
-                h
-            </text>
-        </svg>
-        <svg class="e" height="350" width="300">
-            <text x="10" y="300">
-                e
-            </text>
-        </svg>
-
+        <div class="h-letter">
+            <svg class="h" height="800" width="390">
+                <text x="-65" y="750">
+                    h
+                </text>
+            </svg>
+        </div>
+        <div class="e-letter">
+            <svg class="e" height="350" width="300">
+                <text x="10" y="300">
+                    e
+                </text>
+            </svg>
+        </div>
+         <div class="l-letter1">
+            <svg class="l1" height="800" width="400">
+                <text x="20" y="1000">
+                    l
+                </text>
+            </svg>
+        </div>
     </body>
 </html>
