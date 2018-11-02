@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>
+            BoYi Wong | About
+        </title>
+        <link rel="stylesheet" href="https://use.typekit.net/yqo0wdx.css">
+        <style>
+            body{
+                overflow-y: hidden;
+                margin:0;
+            }
+            .logo{
+                width:100px;
+                height:100px;
+                position:absolute;
+                left:650px;
+            }
+            p{ 
+                font-family: aw-conqueror-didot, serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size:25px;
+                text-align:center;
+            }
+            #about,#resume, #contact, #portfolio{
+                width: 100px;
+                height:100px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .self{
+                width:420px;
+                height:400px;
+                margin-left:30px;
+                    /*
+                    position: fixed;
+                    left: 130px;
+                    top:200px;
+                    */
+            }
+            .grid{
+                display:grid;
+                grid-template-columns: 350px 350px 350px 350px;
+                grid-column-gap: auto;
+                align-items: center;
+            }
+            a{
+                text-decoration:none;
+                color:black;
+                margin:0;
+                padding:0;
+            }
+            .resume:hover, .contact:hover, .portfolio:hover{
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23000000' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+                background-position: 0 100%;
+                background-size: auto 6px;
+                background-repeat: repeat-x;
+                text-decoration: none;
+            }
+            .about{
+                color:#b5b5b5;   
+            }
+            .description{
+                font-family: aw-conqueror-didot, serif;
+                font-weight: 400;
+                font-style: normal;
+                line-height:43px;
+                /*
+                width:minmax(400px auto);
+                height:minmax(400px auto);
+                */
+                text-align:left;
+                font-size:190%;
+                margin-right:150px;
+                margin-left:55px;
+                margin-top:87px;
+
+            }
+            .about-stuff{
+                display:grid;
+                grid-template-columns: 1fr 2fr;
+/*                align-items:end;*/
+                margin-top:115px;
+                margin-left:45px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="website2index.html">
+            <img src="logos%20(wong)-01-01.png" class="logo">
+        </a>
+
+        <div class="grid">
+
+            <div id="about">
+                <a href="website2about.html">
+                    <p class="about">
+                        about
+                    </p>
+                </a>
+            </div>
+
+
+            <div id="resume">
+                <a href="https://google.com">
+                    <p class="resume">
+                        resume
+                    </p>
+                </a>
+            </div>
+
+
+            <div id="portfolio">
+                <a href="https://google.com">
+                    <p class="portfolio">
+                        portfolio
+                    </p>
+                </a>
+            </div>
+
+
+            <div id="contact">
+                <a href="https://google.com">
+                    <p class="contact">
+                        contact
+                    </p>
+                </a>
+            </div>
+
+        </div>
+        <div class="about-stuff">
+            <img src="IMG_1532.JPG" class="self">
+            <p class="description">
+                <b>BoYi Wong</b> is a strategic multi-disciplinary designer based in Boston. She is currently a student in her third year at Massachusetts College of Art and Design. She loves to design with purpose and functionality while being playful and creative in her work as well. In her free time, she likes to doodle and design stickers. 
+            </p>
+        </div>
+    </body>
+</html>
