@@ -4,37 +4,53 @@
         <title>
             BoYi Wong | Home
         </title>
-        <!--
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-</script>
-<script>
-$(document).ready(function(){
-$(".h").click(function(){
-$(".h").fadeout("normal");
-});
-});
-</script>
--->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("body").click(function(){
+                    $(".h").fadeOut("slow");
+                    $(".e").fadeOut("slow",);
+                    $(".l1").fadeOut("slow");
+                    $(".l2").fadeOut("slow");
+                    $(".o").fadeOut("slow");
+                });
+            });
+            $(function(){
+                $(".h",".e",".l1",".l2", ".o").fadeOut(function(){
+                      
+                })
+            });
+
+
+
+        </script>
+
         <style>
             @font-face{
                 font-family: "BrandonGrotesque";
                 src: url(Brandon.reg.otf);
             }
             body{
+                margin:0px;
                 font-family: "Brandon Grotesque", sans-serif;
                 background-image:url("images/new_index_graphic2_no_web_elements__1.gif");
                 background-repeat:no-repeat;
-                /*                background-position:center;*/
+                /*                                background-position:center;*/
                 overflow-y:hidden;
             }
             .logo{
-                height:100px;
-                width:100px;
+                height:90px;
+                width:90px;
                 position:fixed;
+                top:10px;
+                left:630px;
+                z-index:1;
             }
             .wong{
-                height:100px;
-                width:100px; 
+                height:90px;
+                width:90px; 
                 margin-top:-10px;
             }
             .h{
@@ -47,6 +63,12 @@ $(".h").fadeout("normal");
                 top: 30px;
                 z-index:-1;
             }
+            .h:hover{
+                font-size:1260px;
+                fill:#FF7D6C;
+                stroke:#FFA897;
+                transition: 0.5s ease-in-out;
+            }
             .e{
                 font-size: 675px;
                 fill: #ED7A7A;
@@ -54,7 +76,13 @@ $(".h").fadeout("normal");
                 stroke-width:10px;
                 position:fixed;
                 left: 195px;
-                top:-10px;
+                top:10px;
+            }
+            .e:hover{
+                font-size:685px;
+                fill:#FF4739;
+                stroke:#ED7A7A;
+                transition: 0.5s ease-in-out;
             }
             .l1{
                 font-size:775px;
@@ -65,6 +93,12 @@ $(".h").fadeout("normal");
                 top:35px;
                 left: 850px;
             }
+            .l1:hover{
+                font-size:785px;
+                fill:#FF6903;
+                stroke:#FFA669;
+                transition: 0.5s ease-in-out;
+            }
             .l2{
                 font-size:775px;
                 fill:#E56C6C;
@@ -74,6 +108,12 @@ $(".h").fadeout("normal");
                 top:450px;
                 left: 1090px;
             }
+            .l2:hover{
+                font-size:785px;
+                fill:#E04646;
+                stroke:#E56C6C;
+                transition: 0.5s ease-in-out;
+            }
             .o{
                 font-size:1250px;
                 fill:#FF7D5A;
@@ -82,6 +122,17 @@ $(".h").fadeout("normal");
                 position:fixed;
                 top:-250px;
                 left: 990px;
+            }
+            .o:hover{
+                font-size:1260px;
+                fill:#FF5D31;
+                stroke:#FF7D5A;
+                transition: 0.25s ease-in-out;
+            }
+            .button1{
+                display:none;
+                width:400px;
+                height:400px;
             }
         </style>
     </head>
@@ -98,32 +149,33 @@ $(".h").fadeout("normal");
             </svg>
         </div>
         <div class="e-letter">
-            <svg class="e" height="350" width="300">
+            <svg class="e" height="450" width="900">
                 <text x="10" y="300">
                     e
                 </text>
             </svg>
         </div>
         <div class="l-letter1">
-            <svg class="l1" height="1900" width="150">
+            <svg class="l1" height="700" width="500">
                 <text x="-30" y="600">
                     l 
                 </text>
             </svg>
         </div>
         <div class="l-letter2">
-            <svg class="l2" height="1900" width="150">
+            <svg class="l2" height="1000" width="150">
                 <text x="-30" y="600">
                     l 
                 </text>
             </svg>
         </div>
         <div class="o-letter">
-            <svg class="o" height="1900" width="700">
+            <svg class="o" height="700" width="700">
                 <text x="50" y="600">
                     o 
                 </text>
             </svg>
         </div>
+        <img src="images/Index%20Icons-06.png" class="button1"> 
     </body>
 </html>
