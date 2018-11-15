@@ -1,0 +1,161 @@
+body{
+    /*                overflow-y: hidden;*/
+    margin:0;
+}
+#logo{
+    margin-left: auto;
+    margin-right:auto;
+}
+.logo{
+    width:100px;
+    height:100px;
+}
+p{ 
+    font-family: aw-conqueror-didot, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:25px;
+    text-align:center;
+}
+#about,#resume, #contact, #portfolio{
+    width: 100px;
+    height:100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.portfolio{
+    color:#b5b5b5;   
+}
+.grid{
+    display:grid;
+    /*                grid-template-columns: 350px 350px 350px 350px;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: auto;
+    align-items: center;
+}
+a{
+    text-decoration:none;
+    color:black;
+    margin:0;
+    padding:0;
+}
+.resume:hover, .contact:hover, .about:hover{
+    transition:ease padding 0.8s;
+    transition:linear;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23000000' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+}
+#book{
+    position:absolute;
+    top:175px;
+    /*                left:145px;*/
+    width:50%;
+    height:450px;
+    opacity: .3;
+    transition: .75s;
+}
+.book{
+    width:50%;
+    height:450px;
+}
+#book:hover{
+    opacity:1;
+}
+#book:hover .book-text{
+    opacity:0;
+}
+/*
+.book-text{
+position:absolute;
+font-size:50px;   
+top:325px;
+left:14.5%;
+opacity:1;
+}
+*/
+.recipe{
+    margin:0 auto;
+    height:450px;
+    width:50%;
+}
+#recipe{
+    position:absolute;
+    top:175px;
+    left:50%;
+    width:50%;
+    height:450px;
+    opacity:.4;
+    transition:.75s;
+}
+#recipe:hover{
+    opacity:1;
+}
+#map{
+    position:absolute;
+    top:625px;
+    left:0;
+    width:50%;
+    height:450px;
+    opacity:.4;
+    transition:.75s;
+}
+#map:hover{
+    opacity:1;   
+}
+.gif{
+    margin:0 auto;
+    height:450px;
+    width:50%
+
+}
+#gif{
+    position:absolute;
+    top:625px;
+    left:50%;
+    width:50%;
+    height:450px;
+    opacity:.4;
+    transition:.75s;
+}
+#gif:hover{
+    opacity:1;   
+}
+#accordian{
+    position:absolute;
+    top:1075px;
+    left:0%;
+    width:50%;
+    height:450px;
+    opacity:.4;
+    transition:.75s;
+}
+#accordian:hover{
+    opacity:1;   
+}
+#shoes1{
+    position:absolute;
+    top:1075px;
+    left:50%;
+    width:50%;
+    height:450px;
+    opacity:.5;
+    transition:.75s;
+}
+#shoes1:hover{
+    opacity:1;   
+}
+#schedule{
+    position:absolute;
+    top:1525px;
+    left:0%;
+    width:50%;
+    height:450px;
+    opacity:.45;
+    transition:.75s;
+}
+#schedule:hover{
+    opacity:1;   
+}
