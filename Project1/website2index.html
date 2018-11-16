@@ -29,12 +29,16 @@
                 position:fixed;
                 bottom:0;
             }
+            #logo{
+                margin-left:auto;
+                margin-right:auto;
+            }
             .logo{
                 width:100px;
                 height:100px;
                 position:absolute;
                 left:665px;
-                
+
             }
             h1{
                 font-family: aw-conqueror-didot, serif;
@@ -63,9 +67,30 @@
             }
             .grid{
                 display:grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                 grid-column-gap: auto;
-                align-items: center;
+                justify-content: center;
+            }
+            #about{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                object-fit: cover;
+            }
+            #resume{
+                grid-column-start: 3;
+                grid-column-end: 5;
+            }
+            #logo{
+                grid-column-start: 5;
+                grid-column-end:7;
+            }
+            #portfolio{
+                grid-column-start:7 ;
+                grid-column-end: 9;
+            }
+            #contact{
+                grid-column-start:9 ;
+                grid-column-end:11 ;
             }
             a{
                 text-decoration:none;
@@ -88,9 +113,7 @@
         <img src="images/pic1.jpg" class="pic1">
         <img src="images/pic2.jpg" class="pic2">
         <img src="images/pic3.jpg" class="pic3"> 
-        <a href="website2index.html">
-            <img src="images/logos%20(wong)-01.png" class="logo">
-        </a>
+
         <h1>
             boyi wong
         </h1>
@@ -112,7 +135,11 @@
                     </p>
                 </a>
             </div>
-
+            <div id="logo">
+                <a href="website2index.html">
+                    <img src="images/logos%20(wong)-01.png" class="logo">
+                </a>
+            </div>
 
             <div id="portfolio">
                 <a href="website2portfolio_index.html">

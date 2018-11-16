@@ -9,6 +9,10 @@
                 overflow-y: hidden;
                 margin:0;
             }
+            #logo{
+                margin-left:auto;
+                margin-right:auto;
+            }
             .logo{
                 width:100px;
                 height:100px;
@@ -32,17 +36,17 @@
                 width:420px;
                 height:400px;
                 margin-left:30px;
-                    /*
-                    position: fixed;
-                    left: 130px;
-                    top:200px;
-                    */
+                /*
+                position: fixed;
+                left: 130px;
+                top:200px;
+                */
             }
             .grid{
                 display:grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 grid-column-gap: auto;
-                align-items: center;
+                justify-content: center;
             }
             a{
                 text-decoration:none;
@@ -57,7 +61,7 @@
                 background-repeat: repeat-x;
                 text-decoration: none;
             }
-             .about{
+            .about{
                 color:#b5b5b5;   
             }
             .description{
@@ -79,16 +83,14 @@
             .about-stuff{
                 display:grid;
                 grid-template-columns: 1fr 2fr;
-/*                align-items:end;*/
+                /*                align-items:end;*/
                 margin-top:115px;
                 margin-left:45px;
             }
         </style>
     </head>
     <body>
-        <a href="website2index.html">
-            <img src="images/logos%20(wong)-01.png" class="logo">
-        </a>
+
 
         <div class="grid">
 
@@ -108,7 +110,11 @@
                     </p>
                 </a>
             </div>
-
+            <div id="logo">
+                <a href="website2index.html">
+                    <img src="images/logos%20(wong)-01.png" class="logo">
+                </a>
+            </div>
 
             <div id="portfolio">
                 <a href="website2portfolio_index.html">

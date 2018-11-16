@@ -26,12 +26,38 @@ p{
 .portfolio{
     color:#b5b5b5;   
 }
-.grid{
+#grid{
     display:grid;
-    /*                grid-template-columns: 350px 350px 350px 350px;*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: auto;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;  
+/*    border: 3px solid black;*/
+    
+}
+/*
+section{
+    border: 3px solid red;   
+}
+*/
+#about{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    object-fit: cover;
+}
+#resume{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+#logo{
+    grid-column-start: 5;
+    grid-column-end:7;
+}
+#portfolio{
+    grid-column-start:7 ;
+    grid-column-end: 9;
+}
+#contact{
+    grid-column-start:9 ;
+    grid-column-end:11 ;
 }
 a{
     text-decoration:none;
@@ -48,25 +74,31 @@ a{
     background-repeat: repeat-x;
     text-decoration: none;
 }
-#book{
-    position:absolute;
-    top:175px;
-    /*                left:145px;*/
-    width:50%;
-    height:450px;
+.left-column{
+    grid-column-start: 1;
+    grid-column-end: 6;
     opacity: .3;
     transition: .75s;
 }
-.book{
-    width:50%;
-    height:450px;
-}
-#book:hover{
+.left-column:hover{
     opacity:1;
 }
-#book:hover .book-text{
-    opacity:0;
+.right-column{
+    grid-column-start: 6;
+    grid-column-end: 11;
+    opacity:.3;
+    transition:.75s;
 }
+.right-column:hover{
+   opacity:1;
+}
+#book, #recipe, #map, #gif, #schedule, #accordian, #shoes1{
+
+    width:100%; 
+    height:450px;
+    object-fit:cover;
+}
+
 /*
 .book-text{
 position:absolute;
@@ -76,86 +108,76 @@ left:14.5%;
 opacity:1;
 }
 */
-.recipe{
-    margin:0 auto;
-    height:450px;
-    width:50%;
-}
+/*
 #recipe{
-    position:absolute;
-    top:175px;
-    left:50%;
-    width:50%;
-    height:450px;
-    opacity:.4;
-    transition:.75s;
+position:absolute;
+top:175px;
+left:50%;
+width:50%;
+height:450px;
+opacity:.4;
+transition:.75s;
 }
 #recipe:hover{
-    opacity:1;
+opacity:1;
 }
 #map{
-    position:absolute;
-    top:625px;
-    left:0;
-    width:50%;
-    height:450px;
-    opacity:.4;
-    transition:.75s;
+position:absolute;
+top:625px;
+left:0;
+width:50%;
+height:450px;
+opacity:.4;
+transition:.75s;
 }
 #map:hover{
-    opacity:1;   
-}
-.gif{
-    margin:0 auto;
-    height:450px;
-    width:50%
-
+opacity:1;   
 }
 #gif{
-    position:absolute;
-    top:625px;
-    left:50%;
-    width:50%;
-    height:450px;
-    opacity:.4;
-    transition:.75s;
+position:absolute;
+top:625px;
+left:50%;
+width:50%;
+height:450px;
+opacity:.4;
+transition:.75s;
 }
 #gif:hover{
-    opacity:1;   
+opacity:1;   
 }
 #accordian{
-    position:absolute;
-    top:1075px;
-    left:0%;
-    width:50%;
-    height:450px;
-    opacity:.4;
-    transition:.75s;
+position:absolute;
+top:1075px;
+left:0%;
+width:50%;
+height:450px;
+opacity:.4;
+transition:.75s;
 }
 #accordian:hover{
-    opacity:1;   
+opacity:1;   
 }
 #shoes1{
-    position:absolute;
-    top:1075px;
-    left:50%;
-    width:50%;
-    height:450px;
-    opacity:.5;
-    transition:.75s;
+position:absolute;
+top:1075px;
+left:50%;
+width:50%;
+height:450px;
+opacity:.5;
+transition:.75s;
 }
 #shoes1:hover{
-    opacity:1;   
+opacity:1;   
 }
 #schedule{
-    position:absolute;
-    top:1525px;
-    left:0%;
-    width:50%;
-    height:450px;
-    opacity:.45;
-    transition:.75s;
+position:absolute;
+top:1525px;
+left:0%;
+width:50%;
+height:450px;
+opacity:.45;
+transition:.75s;
 }
 #schedule:hover{
-    opacity:1;   
-}
+opacity:1;   
+}*/
